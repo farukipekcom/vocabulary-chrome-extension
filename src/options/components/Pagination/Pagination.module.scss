@@ -1,0 +1,55 @@
+@import "../../../styles/abstracts/_index";
+.pagination {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+  &Previous,
+  &Next {
+    @include sm-medium;
+    border-radius: $radius-sm;
+    border: 1px solid $border;
+    padding: 8px 16px;
+    box-shadow: $shadow;
+    cursor: pointer;
+    &:hover {
+      background-color: $hover-text;
+    }
+  }
+  &Numbers {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow: hidden;
+    &Item {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      @include sm-medium;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+      border-radius: $radius-sm;
+      &:hover {
+        background-color: #e5e8ed;
+      }
+    }
+  }
+}
+.disabled {
+  background-color: $border;
+  color: $secondary;
+  &:hover {
+    background-color: $border;
+    cursor: not-allowed;
+  }
+}
+.active {
+  background-color: #e5e8ed;
+  &:hover {
+    background-color: #e5e8ed;
+  }
+}

@@ -1,0 +1,6 @@
+@import "../../../styles/abstracts/_index";
+.categories {
+  display: flex;
+  border: 1px solid $border;
+  border-radius: $radius-sm;
+}

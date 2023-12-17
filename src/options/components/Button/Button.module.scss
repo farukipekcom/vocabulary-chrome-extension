@@ -1,0 +1,28 @@
+@import "../../../styles/abstracts/_variables";
+@import "../../../styles/abstracts/_mixin";
+.button {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: $radius-sm;
+  padding: 10px 16px;
+  background-color: $primary;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: $hover;
+    transition: background-color 0.2s ease-in-out;
+  }
+  &Icon {
+    width: 12px;
+    height: 12px;
+    svg {
+      fill: #fff;
+    }
+  }
+  &Text {
+    color: #fff;
+    @include sm-medium;
+  }
+}
